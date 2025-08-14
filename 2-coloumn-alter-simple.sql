@@ -9,4 +9,6 @@
 -- ALTER table developers modify column email varchar(100) after id;
 -- (Move Coloum To First - data_of_birth)
 -- alter table developers modify column date_of_birth datetime first;
+-- (Check Table Column DataType)
+-- DESCRIBE developers
 select * from developers;
