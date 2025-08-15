@@ -30,16 +30,6 @@ SELECT COUNT(*) FROM friends_of_pickles;
 -- (Lesson 13: COUNT(*) ... WHERE) => return the number of rows that matches the WHERE clause.
 SELECT COUNT(*) FROM friends_of_pickles WHERE species = 'dog'
 
-
-/* 
-family_members
-
-id	name  	species	num_books_read	num_legs
-1	  Dave	   human      	200	          2
-2	  Mary  	 human       	180         	2
-3	  Pickles	 dog          0	            4
-*/
-
 -- (Lesson 14: SUM) => order to find the sum of a given value. ==========================================
 SELECT SUM(num_books_read) FROM family_members --> 380
 
