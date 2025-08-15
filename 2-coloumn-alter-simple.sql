@@ -1,14 +1,20 @@
 -- select * from developers;
+
 -- (Insert Coloumn)
--- ALTER TABLE developers ADD column have_github boolean default true; 
+-- ALTER TABLE developers ADD column have_github boolean default true;
+
 -- (Delete Coloumn)
 -- alter table developers drop column have_github;
+
 -- (Modifie Coloumn )
 -- ALTER TABLE developers MODIFY COLUMN name VARCHAR(150);
+
 -- (Move email after id)
 -- ALTER table developers modify column email varchar(100) after id;
+
 -- (Move Coloum To First - data_of_birth)
 -- alter table developers modify column date_of_birth datetime first;
+
 -- (Check Table Column DataType)
 -- DESCRIBE developers
 select * from developers;
