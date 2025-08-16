@@ -40,3 +40,14 @@ INSERT INTO movies VALUES (4,'Toy Story 4', 2010, 90);
 
 -- //? Toy Story 4 has been released to critical acclaim! It had a rating of 8.7, and made 340 million domestically and 270 million internationally. Add the record to the BoxOffice table.
 INSERT INTO boxoffice VALUES (4,8.7,350000000, 25999999);
+
+-- SQL Lesson 14: Updating rows ======================
+-- //? The director for A Bug's Life is incorrect, it was actually directed by John Lasseter 
+UPDATE movies
+SET director = "John Lasseter"
+WHERE id = 4
+
+-- //? Both the title and director for Toy Story 8 is incorrect! The title should be "Toy Story 3" and it was directed by Lee Unkrich 
+UPDATE movies 
+SET Title = "Toy Story 3", director = "Lee Unkrich"
+WHERE id = 8
