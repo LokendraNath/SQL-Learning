@@ -20,3 +20,16 @@ SELECT role, SUM(years_employed)
 FROM employees
 GROUP BY role
 HAVING role = "Engineer";
+
+-- SQL Lesson 12: Order of execution of a Query ======================
+-- //? Find the number of movies each director has directed
+SELECT director, COUNT(title) AS nomber_of_movie
+FROM movies
+GROUP BY director
+
+-- //? Find the total domestic and international sales that can be attributed to each director
+SELECT director, SUM(domestic_sales + international_sales) as Cumulative_sales_from_all_movies
+FROM movies
+    INNER JOIN boxoffice
+        ON movies.id = boxoffice.movie_id
+GROUP BY director;
